@@ -1,0 +1,58 @@
+.game{
+    width: 600px;
+    height: 200px;
+    border-bottom: 1px solid #000;
+    margin: auto;
+}
+
+#dino{
+    width: 50px;
+    height: 50px;
+    background-image: url(img/dinosaur.png);
+    background-size: 50px 50px;
+    position: relative;
+    top: 150px;
+}
+
+.jump{
+    animation: jump 0.5s linear;
+}
+
+
+@keyframes jump{
+    0%{
+        top: 150px;
+    }
+    30%{
+        top: 100px;
+    }
+    50%{
+        top: 50px;
+    }
+    80%{
+        top: 100px;
+    }
+    100%{
+        top: 150px;
+    }  
+}   
+
+#cact{
+    width: 20px;
+    height: 40px;
+    background-image: url(img/cactaceae.png);
+    background-size: 20px 40px;
+    position: relative;
+    top: 110px;
+    left: 580px;
+    animation: cactMove 1s infinite linear;
+}
+@keyframes cactMove{
+    0%{
+        left: 580px;
+    }
+    100%{
+        left: -20px;
+    }
+}
+
